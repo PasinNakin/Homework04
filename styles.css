@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600&family=Noto+Sans:wght@200;300;600;800&family=Prompt:ital,wght@0,300;1,500&family=Rubik:wght@300;400;500;600;700&family=Sarabun:wght@100;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+nav {
+    text-align: end;
+    padding: 30px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 0 10px;
+}
+.container_main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.profile_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 66vw;
+    gap: 50px;
+    margin: auto;
+    padding: 50px 0 30px 0;
+}
+.lprofile {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    flex: 3;
+}
+.lprofile button {
+    box-shadow: inset 0px 39px 0px -24px #e6a373;
+    background-color: #e3865d;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    padding: 6px 15px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #b23e35;
+    max-width: 200px;
+}
+.picprofile {
+    border-radius: 50%;
+    width: 200px;
+    /* flex: 1; */
+}
+.picprofile img {
+    border-radius: 50%;
+    width: 100%;
+    box-shadow: -4px 4px 8px rgb(152, 172, 181);
+}
+.recentbox {
+    background-color: rgb(221, 252, 252);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+}
+.recenthead {
+    display: flex;
+    justify-content: space-between;
+    width: 66vw;
+    /* background-color: #ffffff; */
+}
+.recenthead a {
+    text-decoration: none;
+    color: black;
+}
+.subrecent {
+    display: flex;
+    max-width: 66vw;
+    gap: 30px;
+}
+.inrecentbox01 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+    gap: 14px;
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px rgb(210, 210, 210);
+}
+.featurebox {
+    display: block;
+    align-items: center;
+    margin: auto;
+}
+.infeaturebox {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    gap: 12px;
+}
+.subfeature {
+    display: flex;
+    max-width: 66vw;
+    padding: 20px;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+.year {
+    display: flex;
+    gap: 20px;
+}
+.borderYear {
+    color: white;
+    background-color: black;
+    border-radius: 4px;
+    width: 3rem;
+    text-align: center;
+}
+.subfeature > img {
+    width: 140px;
+}
+.featurebox > p {
+    align-self: flex-start;
+}
+.hamberger {
+    width: 40px;
+    cursor: pointer;
+}
+.nav-mobile {
+    text-align: end;
+    padding: 20px;
+    display: none;
+}
+.nav-popup {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    text-align: end;
+    gap: 2px;
+}
+.nav-popup a {
+    padding: 5px 16px;
+    border: 1px solid skyblue;
+    background-color: rgb(195, 238, 255);
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+@media (max-width: 800px) {
+    .subrecent {
+        flex-direction: column;
+    }
+    .profile_box {
+        flex-direction: column-reverse;
+        width: 80vw;
+    }
+    .lprofile {
+        align-items: center;
+        text-align: center;
+    }
+    nav {
+        display: none;
+    }
+    .nav-mobile {
+        display: block;
+    }
+    .nav-popup {
+        display: none;
+    }
+    .hamberger:hover ~ .nav-popup {
+        display: flex;
+    }
+    .nav-popup:hover {
+        display: flex;
+    }
+}
